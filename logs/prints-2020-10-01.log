@@ -1,0 +1,7 @@
+19:34:37.594 [TestNG-tests-1] INFO  resources.base - Navigated to New First page
+19:34:45.063 [TestNG-tests-1] INFO  resources.base - Driver is closed
+19:34:45.791 [TestNG-tests-2] INFO  resources.base - Driver is closed
+19:35:47.107 [main] INFO  resources.base - Driver is initialised
+19:35:50.605 [main] INFO  resources.base - Navigated to New First page
+19:35:53.045 [main] INFO  resources.base - Successfully verified Logo Title
+19:35:53.179 [main] INFO  resources.base - Successfully verified NavBar1 Title

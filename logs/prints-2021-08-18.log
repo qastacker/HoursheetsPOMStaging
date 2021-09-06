@@ -1,0 +1,8 @@
+11:56:35.860 [main] INFO  resources.base - Driver is closed
+11:56:37.990 [main] INFO  resources.base - Driver is initialised
+11:56:43.113 [main] INFO  resources.base - Navigated to New First page
+11:56:48.517 [main] INFO  resources.base - Welcome to First Basic page
+11:57:08.532 [main] INFO  resources.base - Driver is closed
+18:16:57.468 [main] INFO  resources.base - Driver is initialised
+18:17:00.327 [main] INFO  resources.base - Navigated to New First page
+18:17:06.204 [main] INFO  resources.base - Welcome to First Basic page

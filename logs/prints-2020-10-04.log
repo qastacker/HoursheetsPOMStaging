@@ -1,0 +1,7 @@
+18:32:59.628 [TestNG-tests-2] INFO  resources.base - Welcome to First Basic page
+18:33:04.951 [TestNG-tests-1] INFO  resources.base - Driver is closed
+19:18:41.989 [TestNG-tests-2] INFO  resources.base - Driver is initialised
+19:18:42.352 [TestNG-tests-1] INFO  resources.base - Driver is initialised
+19:18:46.490 [TestNG-tests-1] INFO  resources.base - Navigated to New First page
+19:18:50.384 [TestNG-tests-2] INFO  resources.base - Navigated to New First page
+19:18:57.628 [TestNG-tests-2] INFO  resources.base - Welcome to First Basic page

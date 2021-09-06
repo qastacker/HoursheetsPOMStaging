@@ -1,0 +1,5 @@
+POMTutorial\App.class
+resources\base.class
+Pages\LoginPage.class
+Pages\BasePage.class
+resources\ExtentReporterNG.class

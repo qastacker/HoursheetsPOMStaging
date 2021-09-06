@@ -1,0 +1,7 @@
+18:29:49.350 [main] INFO  resources.base - Driver is initialised
+18:30:09.711 [main] INFO  resources.base - Navigated to New First page
+18:30:15.170 [main] INFO  resources.base - Welcome to First Basic page
+18:30:37.018 [main] INFO  resources.base - Successfully verified Organisation Title
+18:30:37.299 [main] INFO  resources.base - Driver is closed
+18:32:40.327 [TestNG-tests-1] INFO  resources.base - Driver is initialised
+18:32:40.402 [TestNG-tests-2] INFO  resources.base - Driver is initialised
