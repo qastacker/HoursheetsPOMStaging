@@ -50,16 +50,6 @@ public class AddClientTest extends BasePage {
 		log.info("Navigated to Login page");
 	}
 
-//	@Test(priority=0)
-//	public void UserLoggedIn() {
-//		
-//		lp = new LoginPage(driver);
-//		acp = new AddClientPage(driver);
-//		//driver.get(prop.getProperty("url"));
-//		acp = lp.loginToHoursheets(TenantEmail, TenantPassword);	
-//		log.info("Navigated to Login page");
-//	}
-
 	@Test(priority = 0)
 	public void AddingClientPageTest() throws Exception {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -81,7 +71,6 @@ public class AddClientTest extends BasePage {
 		acp.getWebsite(Website);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		acp.addClientPhoto();
-		//at.uploadFile(AppTest.CLIENT_PHOTO_UPLOAD_PATH);
 		acp.clickClientSubmitBtn();
 	}
 

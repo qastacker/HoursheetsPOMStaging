@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Clients.AddClientTest">
+      <class name="Hoursheets.SignupPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="AddingClientPageTest"/>
-          <include name="bTest"/>
+          <include name="verifyPhoneDetails"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- Clients.AddClientTest -->
+      </class> <!-- Hoursheets.SignupPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

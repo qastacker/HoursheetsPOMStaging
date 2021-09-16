@@ -46,7 +46,8 @@ public class BasePage {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url"));
+		//driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("trialUrl"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 
