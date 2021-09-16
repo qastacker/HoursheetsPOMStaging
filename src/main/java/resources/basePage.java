@@ -18,7 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BasePage {
+public class basePage {
 
 	public static WebDriver driver;
 	public static Properties prop;  
@@ -46,8 +46,11 @@ public class BasePage {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		//driver.get(prop.getProperty("url"));
-		driver.get(prop.getProperty("trialUrl"));
+		driver.get(prop.getProperty("url"));
+		/*
+		 * Staging Signup
+		 * driver.get(prop.getProperty("trialUrl"));
+		 * **/
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 

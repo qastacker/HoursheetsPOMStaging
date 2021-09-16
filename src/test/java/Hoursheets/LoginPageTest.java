@@ -12,22 +12,22 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 
 import Pages.LoginPage;
-import resources.BasePage;
+import resources.basePage;
 
-public class LoginPageTest extends BasePage {
+public class LoginPageTest extends basePage {
 
 	WebDriver driver;
 	Properties prop;
-	BasePage basePage;
+	basePage bp;
 	ExtentReports extent;
 	LoginPage lp;
-	public static Logger log = LogManager.getLogger(BasePage.class.getName());
+	public static Logger log = LogManager.getLogger(basePage.class.getName());
 
 	@BeforeTest
 	public void bTest() {
-		basePage = new BasePage();
-		prop = basePage.initialize_Properties();
-		driver = basePage.initializeDriver(prop);
+		bp = new basePage();
+		prop = bp.initialize_Properties();
+		driver = bp.initializeDriver(prop);
 		lp = new LoginPage(driver);
 	}
 

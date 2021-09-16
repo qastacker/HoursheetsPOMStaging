@@ -10,10 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import resources.BasePage;
+import resources.basePage;
 import util.TimeUtil;
 
-public class SignupPage extends BasePage{
+public class SignupPage extends basePage{
 
 	public WebDriver driver;
 	JavascriptExecutor js;

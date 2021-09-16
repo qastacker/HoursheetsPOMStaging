@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 
 import Pages.SignupPage;
-import resources.BasePage;
+import resources.basePage;
 
 public class SignupPageTest {
 
@@ -22,25 +22,25 @@ public class SignupPageTest {
 	String plan_d = "trial";
 	String FName = "Namer";
 	String LName = "Ender";
-	String Email = "adolDeveloper5@gmail.com";
-	String Workspace = "adev5";
-	String Country = "India";
+	String Email = "adolDeveloper6@gmail.com";
+	String Workspace = "adev6";
+	String Country = "Australia";
 	String Password = "Devtest123@";
 	String phNo = "5550123432";
 
 	WebDriver driver;
 	Properties prop;
-	BasePage basePage;
+	basePage bp;
 	ExtentReports extent;
 	SignupPage sp;
 
-	public static Logger log = LogManager.getLogger(BasePage.class.getName());
+	public static Logger log = LogManager.getLogger(basePage.class.getName());
 
 	@BeforeTest
 	public void beforeTest() {
-		basePage = new BasePage();
-		prop = basePage.initialize_Properties();
-		driver = basePage.initializeDriver(prop);
+		bp = new basePage();
+		prop = bp.initialize_Properties();
+		driver = bp.initializeDriver(prop);
 		sp = new SignupPage(driver);
 	}
 

@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import resources.BasePage;
+import resources.basePage;
 import util.AppTest;
 
-public class AddClientPage extends BasePage{
+public class AddClientPage extends basePage{
 
 	public WebDriver driver;
 	AppTest at;

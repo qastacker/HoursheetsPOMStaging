@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import resources.BasePage;
+import resources.basePage;
 
-public class DashboardPage extends BasePage{
+public class DashboardPage extends basePage{
 	
 	public WebDriver driver;
 	

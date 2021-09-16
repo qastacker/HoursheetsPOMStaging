@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12724" started-at="2021-09-16T18:14:15 IST" finished-at="2021-09-16T18:14:28 IST">
+  <suite name="Default suite" duration-ms="11622" started-at="2021-09-16T18:57:33 IST" finished-at="2021-09-16T18:57:44 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12724" started-at="2021-09-16T18:14:15 IST" finished-at="2021-09-16T18:14:28 IST">
-      <class name="Hoursheets.SignupPageTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Hoursheets.SignupPageTest@1ed6388a]" name="beforeTest" is-config="true" duration-ms="3964" started-at="2021-09-16T18:14:15 IST" finished-at="2021-09-16T18:14:19 IST">
+    <test name="Default test" duration-ms="11622" started-at="2021-09-16T18:57:33 IST" finished-at="2021-09-16T18:57:44 IST">
+      <class name="Clients.AddClientTest">
+        <test-method status="PASS" signature="bTest()[pri:0, instance:Clients.AddClientTest@576d5deb]" name="bTest" is-config="true" duration-ms="3959" started-at="2021-09-16T18:57:33 IST" finished-at="2021-09-16T18:57:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="selectTrialPlan()[pri:0, instance:Hoursheets.SignupPageTest@1ed6388a]" name="selectTrialPlan" duration-ms="849" started-at="2021-09-16T18:14:19 IST" finished-at="2021-09-16T18:14:20 IST">
+        </test-method> <!-- bTest -->
+        <test-method status="PASS" signature="AddingClientPageTest()[pri:0, instance:Clients.AddClientTest@576d5deb]" name="AddingClientPageTest" duration-ms="7320" started-at="2021-09-16T18:57:37 IST" finished-at="2021-09-16T18:57:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectTrialPlan -->
-        <test-method status="PASS" signature="verifyFirstNameLastNameTest()[pri:1, instance:Hoursheets.SignupPageTest@1ed6388a]" name="verifyFirstNameLastNameTest" duration-ms="461" started-at="2021-09-16T18:14:20 IST" finished-at="2021-09-16T18:14:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFirstNameLastNameTest -->
-        <test-method status="PASS" signature="verifyEmail()[pri:2, instance:Hoursheets.SignupPageTest@1ed6388a]" name="verifyEmail" duration-ms="456" started-at="2021-09-16T18:14:20 IST" finished-at="2021-09-16T18:14:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEmail -->
-        <test-method status="PASS" signature="verifyWorkspace()[pri:3, instance:Hoursheets.SignupPageTest@1ed6388a]" name="verifyWorkspace" duration-ms="155" started-at="2021-09-16T18:14:21 IST" finished-at="2021-09-16T18:14:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWorkspace -->
-        <test-method status="PASS" signature="selectCountry()[pri:4, instance:Hoursheets.SignupPageTest@1ed6388a]" name="selectCountry" duration-ms="237" started-at="2021-09-16T18:14:21 IST" finished-at="2021-09-16T18:14:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCountry -->
-        <test-method status="PASS" signature="verifyPhoneDetails()[pri:5, instance:Hoursheets.SignupPageTest@1ed6388a]" name="verifyPhoneDetails" duration-ms="1935" started-at="2021-09-16T18:14:21 IST" finished-at="2021-09-16T18:14:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPhoneDetails -->
-        <test-method status="PASS" signature="getPassword()[pri:6, instance:Hoursheets.SignupPageTest@1ed6388a]" name="getPassword" duration-ms="355" started-at="2021-09-16T18:14:23 IST" finished-at="2021-09-16T18:14:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPassword -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Hoursheets.SignupPageTest@1ed6388a]" name="tearDown" is-config="true" duration-ms="4242" started-at="2021-09-16T18:14:23 IST" finished-at="2021-09-16T18:14:28 IST">
+        </test-method> <!-- AddingClientPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Clients.AddClientTest@576d5deb]" name="tearDown" is-config="true" duration-ms="301" started-at="2021-09-16T18:57:44 IST" finished-at="2021-09-16T18:57:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Hoursheets.SignupPageTest -->
+      </class> <!-- Clients.AddClientTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

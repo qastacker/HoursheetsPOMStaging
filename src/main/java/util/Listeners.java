@@ -12,9 +12,9 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import resources.ExtentReporterNG;
-import resources.BasePage;
+import resources.basePage;
 
-public class Listeners extends BasePage implements ITestListener {
+public class Listeners extends basePage implements ITestListener {
 	ExtentTest test;
 	ExtentReports extent=ExtentReporterNG.getReportObject();
 	ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
