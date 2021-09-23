@@ -28,14 +28,6 @@ public class AddClientTest extends basePage {
 	AppTest at;
 	ExtentReports extent;
 
-	String Firstname = "Name 3";
-	String Lastname = "Last 3";
-	String email = "devtest.3@mexcool2.co";
-	String Address = "";
-	String PhoneNo = "";
-	String Fax = "";
-	String Website = "";
-
 	public static Logger log = LogManager.getLogger(basePage.class.getName());
 
 	@BeforeTest
@@ -49,9 +41,9 @@ public class AddClientTest extends basePage {
 		acp = lp.loginToHoursheets(prop.getProperty("tenantEmail"), prop.getProperty("tenantPassword"));
 		log.info("Navigated to Login page");
 	}
-
-	@Test(priority = 0)
-	public void AddingClientPageTest() throws Exception {
+	
+	@Test(priority=0)
+	public void verifyClientSideButton() {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		if (acp.verifyClientBtn()) {
@@ -60,20 +52,48 @@ public class AddClientTest extends basePage {
 			acp.getSideBtnVisible().click();
 			acp.clientBtnClick();
 		}
+	}
+
+	@Test(priority=1)
+	public void verifyClientAddButton() {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		acp.clickAddClientBtn();
-		acp.getClientFirstName(Firstname);
-		acp.getClientLastName(Lastname);
-		acp.getEmail(email);
-		acp.getAddress(Address);
-		acp.getPhoneNo(PhoneNo);
-		acp.getFax(Fax);
-		acp.getWebsite(Website);
+	}
+	
+	@Test(priority=2)
+	public void clientFirstAndLastName() {
+		acp.getClientFirstName();
+		acp.getClientLastName();
+	}
+	
+	@Test(priority=3)
+	public void clientEmail() {
+		acp.getEmail();
+	}
+	
+	@Test(priority=4)
+	public void clientAddress() {
+		acp.getAddress();
+	}
+	
+	@Test(priority=5)
+	public void clientPhNoAndFax() {
+		acp.getPhoneNo();
+		acp.getFax();
+	}
+	
+	@Test(priority=6)
+	public void clientWebsite() {
+		acp.getWebsite();
+	}
+	
+	@Test(priority=7)
+	public void clientPhoto() throws Exception {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		acp.addClientPhoto();
 		acp.clickClientSubmitBtn();
 	}
-
+	
 	@AfterTest
 	public void tearDown() {
 		driver.close();

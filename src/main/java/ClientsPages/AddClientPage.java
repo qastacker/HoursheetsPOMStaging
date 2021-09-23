@@ -10,11 +10,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import resources.basePage;
 import util.AppTest;
+import util.ExcelUtil;
+import util.TimeUtil;
 
+@SuppressWarnings("static-access")
 public class AddClientPage extends basePage{
 
 	public WebDriver driver;
 	AppTest at;
+	ExcelUtil ex;
+	
+	String firstname = ex.getCellData("clients",1, 0);
+	String lastname = ex.getCellData("clients",1, 1);
+	String email = ex.getCellData("clients",1, 2);
+	String address = ex.getCellData("clients",1, 3);
+	String phoneNo = ex.getCellData("clients",1, 4);
+	String fax = ex.getCellData("clients",1, 5);
+	String website = ex.getCellData("clients",1, 6);
 	
 	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiIconButton-root menu-btn']")
 	By SideBtnVisible;
@@ -75,31 +87,31 @@ public class AddClientPage extends basePage{
 		clickAddClientBtn.click();
 	}
 	
-	public void getClientFirstName(String firstName) {
-		clientFirstName.sendKeys(firstName);
+	public void getClientFirstName() {
+		clientFirstName.sendKeys(firstname);
 	}
 	
-	public void getClientLastName(String lastname) {
+	public void getClientLastName() {
 		clientLastName.sendKeys(lastname);
 	}
 	
-	public void getEmail(String email) {
+	public void getEmail() {
 		clientEmail.sendKeys(email);
 	}
 	
-	public void getAddress(String address) {
+	public void getAddress() {
 		clientAddress.sendKeys(address);
 	}
 	
-	public void getPhoneNo(String phoneNo) {
+	public void getPhoneNo() {
 		clientPhoneNo.sendKeys(phoneNo);
 	}
 	
-	public void getFax(String fax) {
+	public void getFax() {
 		clientFax.sendKeys(fax);
 	}
 	
-	public void getWebsite(String website) {
+	public void getWebsite() {
 		clientWebsite.sendKeys(website);
 	}
 	
@@ -107,12 +119,12 @@ public class AddClientPage extends basePage{
 		at = new AppTest(driver);
 		uploadPhoto.click();
 		at.uploadFile(AppTest.CLIENT_PHOTO_UPLOAD_PATH);
-		Thread.sleep(100);
+		TimeUtil.SleepWaitOne();
 	}
 	
-	public void clickClientSubmitBtn() throws InterruptedException {
+	public void clickClientSubmitBtn() {
 		ClickClientSubmitBtn.click();
-		Thread.sleep(100);
+		TimeUtil.SleepWaitOne();
 	}
 
 }

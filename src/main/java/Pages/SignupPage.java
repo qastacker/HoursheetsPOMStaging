@@ -20,7 +20,7 @@ public class SignupPage extends basePage {
 	public WebDriver driver;
 	JavascriptExecutor js;
 	ExcelUtil ex;
-	
+
 //	String FName = "Namer";
 //	String LName = "Ender";
 //	String Email = "adolDeveloper6@gmail.com";
@@ -29,14 +29,14 @@ public class SignupPage extends basePage {
 //	String Password = "Devtest123@";
 //	String phNo = "5550123432";
 
-	String FName = ex.getCellData("signup",1, 0);
-	String LName = ex.getCellData("signup",1, 1);
-	String Email = ex.getCellData("signup",1, 2);
-	String Workspace = ex.getCellData("signup",1, 3);
-	String Country = ex.getCellData("signup",1, 4);
-	String Password = ex.getCellData("signup",1, 7);
-	String phNo = ex.getCellData("signup",1, 5);
-	
+	String FName = ex.getCellData("signup", 1, 0);
+	String LName = ex.getCellData("signup", 1, 1);
+	String Email = ex.getCellData("signup", 1, 2);
+	String Workspace = ex.getCellData("signup", 1, 3);
+	String Country = ex.getCellData("signup", 1, 4);
+	String Password = ex.getCellData("signup", 1, 7);
+	String phNo = ex.getCellData("signup", 1, 5);
+
 	@FindBy(xpath = "//span[normalize-space()='continue to trial for 14 days']")
 	WebElement scrollToTrial;
 
@@ -118,7 +118,7 @@ public class SignupPage extends basePage {
 	public void navigateToPhoneDetails() {
 		// TODO Auto-generated method stub
 		js = (JavascriptExecutor) driver;
-		TimeUtil.FiveWait();
+		TimeUtil.SleepWaitFive();
 		js.executeScript("arguments[0].scrollIntoView(true);", phone_label);
 	}
 
@@ -126,7 +126,7 @@ public class SignupPage extends basePage {
 		// TODO Auto-generated method stub
 		js = (JavascriptExecutor) driver;
 		flag_dropdown.click();
-		TimeUtil.FiveWait();
+		TimeUtil.SleepWaitFive();
 		for (WebElement opt : flagOptions) {
 			if (opt.equals(countryCodeByFlag)) {
 				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

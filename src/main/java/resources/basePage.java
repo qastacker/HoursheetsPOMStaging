@@ -46,7 +46,7 @@ public class basePage {
 		}
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("trialUrl"));
+		driver.get(prop.getProperty("url"));
 		/*
 		 * Staging Signup
 		 * driver.get(prop.getProperty("trialUrl"));

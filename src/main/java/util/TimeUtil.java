@@ -2,7 +2,7 @@ package util;
 
 public class TimeUtil {
 	
-	public void OneWait() {
+	public static void SleepWaitOne() {
 		try {
 			Thread.sleep(100);
 		} catch (InterruptedException e) {
@@ -10,7 +10,7 @@ public class TimeUtil {
 		}
 	}
 
-	public static void FiveWait() {
+	public static void SleepWaitFive() {
 		try {
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
@@ -18,7 +18,7 @@ public class TimeUtil {
 		}
 	}
 
-	public static void longWait() {
+	public static void SleepWaitTen() {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {

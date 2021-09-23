@@ -1,2 +1,5 @@
 18:57:33.248 [main] INFO  resources.basePage - Driver is initialised
 18:57:37.194 [main] INFO  resources.basePage - Navigated to Login page
+11:45:30.096 [main] INFO  resources.basePage - Driver is initialised
+11:46:38.665 [main] INFO  resources.basePage - Driver is initialised
+11:46:44.212 [main] INFO  resources.basePage - Navigated to Login page
