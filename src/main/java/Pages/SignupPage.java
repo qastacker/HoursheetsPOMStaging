@@ -11,16 +11,35 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import resources.basePage;
+import util.ExcelUtil;
 import util.TimeUtil;
 
-public class SignupPage extends basePage{
+@SuppressWarnings("static-access")
+public class SignupPage extends basePage {
 
 	public WebDriver driver;
 	JavascriptExecutor js;
+	ExcelUtil ex;
+	
+//	String FName = "Namer";
+//	String LName = "Ender";
+//	String Email = "adolDeveloper6@gmail.com";
+//	String Workspace = "adev6";
+//	String Country = "Australia";
+//	String Password = "Devtest123@";
+//	String phNo = "5550123432";
+
+	String FName = ex.getCellData("signup",1, 0);
+	String LName = ex.getCellData("signup",1, 1);
+	String Email = ex.getCellData("signup",1, 2);
+	String Workspace = ex.getCellData("signup",1, 3);
+	String Country = ex.getCellData("signup",1, 4);
+	String Password = ex.getCellData("signup",1, 7);
+	String phNo = ex.getCellData("signup",1, 5);
 	
 	@FindBy(xpath = "//span[normalize-space()='continue to trial for 14 days']")
 	WebElement scrollToTrial;
-	
+
 	@FindBy(xpath = "//a[@href='/app/signup?plan=trial']")
 	WebElement trialUrl;
 
@@ -36,7 +55,7 @@ public class SignupPage extends basePage{
 	@FindBy(name = "workspace")
 	WebElement workspace;
 
-	@FindBy(xpath="//input[@name='country']")
+	@FindBy(xpath = "//input[@name='country']")
 	WebElement countrySelected;
 
 	@FindBy(xpath = "//div[@class='special-label']")
@@ -47,8 +66,8 @@ public class SignupPage extends basePage{
 
 	@FindBy(xpath = "//ul[@role='listbox']/li")
 	List<WebElement> flagOptions;
-	
-	//Select country based on count
+
+	// Select country based on count
 	@FindBy(xpath = "//ul[@role='listbox']/li[11]")
 	WebElement countryCodeByFlag;
 
@@ -69,33 +88,33 @@ public class SignupPage extends basePage{
 
 	public void clickTrialPlan() {
 		// TODO Auto-generated method stub
-		
+
 //		TimeUtil.FiveWait();
 //		js.executeScript("arguments[0].scrollIntoView(true);", scrollToTrial);
 		trialUrl.click();
 	}
-	
-	public void getFirstName(String Firstname) {
-		firstname.sendKeys(Firstname);
+
+	public void getFirstName() {
+		firstname.sendKeys(FName);
 	}
 
-	public void getLastName(String Lastname) {
-		lastname.sendKeys(Lastname);
+	public void getLastName() {
+		lastname.sendKeys(LName);
 	}
 
-	public void getEmail(String Email) {
+	public void getEmail() {
 		email.sendKeys(Email);
 	}
 
-	public void getWorkspace(String Workspace) {
+	public void getWorkspace() {
 		workspace.sendKeys(Workspace);
 	}
 
-	public void getCountry(String Country) {
+	public void getCountry() {
 		countrySelected.sendKeys(Country);
 		countrySelected.sendKeys(Keys.DOWN, Keys.ENTER);
 	}
-	
+
 	public void navigateToPhoneDetails() {
 		// TODO Auto-generated method stub
 		js = (JavascriptExecutor) driver;
@@ -117,22 +136,15 @@ public class SignupPage extends basePage{
 		}
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
-	
-	public void enterPhoneNo(String phNo) {
+
+	public void enterPhoneNo() {
 		// TODO Auto-generated method stub
 		phone.sendKeys(phNo);
 	}
-	
-	public void getPassword(String Password) {
+
+	public void getPassword() {
 		password.sendKeys(Password);
 		submit.click();
 	}
 
-	
-
-	
-
-	
-
-	
 }

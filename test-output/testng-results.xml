@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11622" started-at="2021-09-16T18:57:33 IST" finished-at="2021-09-16T18:57:44 IST">
+  <suite name="Default suite" duration-ms="9427" started-at="2021-09-23T11:00:40 IST" finished-at="2021-09-23T11:00:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11622" started-at="2021-09-16T18:57:33 IST" finished-at="2021-09-16T18:57:44 IST">
-      <class name="Clients.AddClientTest">
-        <test-method status="PASS" signature="bTest()[pri:0, instance:Clients.AddClientTest@576d5deb]" name="bTest" is-config="true" duration-ms="3959" started-at="2021-09-16T18:57:33 IST" finished-at="2021-09-16T18:57:37 IST">
+    <test name="Default test" duration-ms="9427" started-at="2021-09-23T11:00:40 IST" finished-at="2021-09-23T11:00:50 IST">
+      <class name="Hoursheets.SignupPageTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="beforeTest" is-config="true" duration-ms="4949" started-at="2021-09-23T11:00:40 IST" finished-at="2021-09-23T11:00:45 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest -->
-        <test-method status="PASS" signature="AddingClientPageTest()[pri:0, instance:Clients.AddClientTest@576d5deb]" name="AddingClientPageTest" duration-ms="7320" started-at="2021-09-16T18:57:37 IST" finished-at="2021-09-16T18:57:44 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="selectTrialPlan()[pri:0, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="selectTrialPlan" duration-ms="537" started-at="2021-09-23T11:00:45 IST" finished-at="2021-09-23T11:00:46 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddingClientPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Clients.AddClientTest@576d5deb]" name="tearDown" is-config="true" duration-ms="301" started-at="2021-09-16T18:57:44 IST" finished-at="2021-09-16T18:57:44 IST">
+        </test-method> <!-- selectTrialPlan -->
+        <test-method status="PASS" signature="verifyFirstNameLastNameTest()[pri:1, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="verifyFirstNameLastNameTest" duration-ms="508" started-at="2021-09-23T11:00:46 IST" finished-at="2021-09-23T11:00:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstNameLastNameTest -->
+        <test-method status="PASS" signature="verifyEmail()[pri:2, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="verifyEmail" duration-ms="415" started-at="2021-09-23T11:00:46 IST" finished-at="2021-09-23T11:00:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmail -->
+        <test-method status="PASS" signature="verifyWorkspace()[pri:3, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="verifyWorkspace" duration-ms="156" started-at="2021-09-23T11:00:47 IST" finished-at="2021-09-23T11:00:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkspace -->
+        <test-method status="PASS" signature="verifyCountrySelected()[pri:4, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="verifyCountrySelected" duration-ms="247" started-at="2021-09-23T11:00:47 IST" finished-at="2021-09-23T11:00:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountrySelected -->
+        <test-method status="PASS" signature="verifyPhoneDetails()[pri:5, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="verifyPhoneDetails" duration-ms="1913" started-at="2021-09-23T11:00:47 IST" finished-at="2021-09-23T11:00:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhoneDetails -->
+        <test-method status="PASS" signature="verifyPassword()[pri:6, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="verifyPassword" duration-ms="351" started-at="2021-09-23T11:00:49 IST" finished-at="2021-09-23T11:00:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Hoursheets.SignupPageTest@7b36aa0c]" name="tearDown" is-config="true" duration-ms="284" started-at="2021-09-23T11:00:49 IST" finished-at="2021-09-23T11:00:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Clients.AddClientTest -->
+      </class> <!-- Hoursheets.SignupPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

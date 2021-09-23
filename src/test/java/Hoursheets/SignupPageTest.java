@@ -10,24 +10,11 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
-
 import Pages.SignupPage;
 import resources.basePage;
 
 public class SignupPageTest {
-
-	String plan_a = "free";
-	String plan_b = "standard";
-	String plan_c = "premium";
-	String plan_d = "trial";
-	String FName = "Namer";
-	String LName = "Ender";
-	String Email = "adolDeveloper6@gmail.com";
-	String Workspace = "adev6";
-	String Country = "Australia";
-	String Password = "Devtest123@";
-	String phNo = "5550123432";
-
+	
 	WebDriver driver;
 	Properties prop;
 	basePage bp;
@@ -51,35 +38,35 @@ public class SignupPageTest {
 
 	@Test(priority=1)
 	public void verifyFirstNameLastNameTest() {
-		sp.getFirstName(FName);
-		sp.getLastName(LName);
+		sp.getFirstName();
+		sp.getLastName();
 	}
 
 	@Test(priority=2)
 	public void verifyEmail() {
-		sp.getEmail(Email);
+		sp.getEmail();
 	}
 
 	@Test(priority=3)
 	public void verifyWorkspace() {
-		sp.getWorkspace(Workspace);
+		sp.getWorkspace();
 	}
 
 	@Test(priority=4)
 	public void verifyCountrySelected() {
-		sp.getCountry(Country);
+		sp.getCountry();
 	}
 
 	@Test(priority = 5)
 	public void verifyPhoneDetails() {
 		sp.navigateToPhoneDetails();
 		sp.selectCountryCode();
-		sp.enterPhoneNo(phNo);
+		sp.enterPhoneNo();
 	}
 	
 	@Test(priority=6)
 	public void verifyPassword() {
-		sp.getPassword(Password);
+		sp.getPassword();
 	}
 
 	@AfterTest

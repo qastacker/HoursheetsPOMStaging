@@ -5,8 +5,15 @@
     <classes>
       <class name="Hoursheets.SignupPageTest">
         <methods>
+          <include name="verifyWorkspace"/>
+          <include name="verifyPassword"/>
           <include name="verifyPhoneDetails"/>
+          <include name="verifyCountrySelected"/>
           <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="selectTrialPlan"/>
+          <include name="verifyEmail"/>
+          <include name="verifyFirstNameLastNameTest"/>
         </methods>
       </class> <!-- Hoursheets.SignupPageTest -->
     </classes>
