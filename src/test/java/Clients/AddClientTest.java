@@ -58,7 +58,7 @@ public class AddClientTest extends basePage {
 	public void verifyClientAddButton() {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		acp.clickAddClientBtn();
-	}
+	} 
 	
 	@Test(priority=2)
 	public void clientFirstAndLastName() {
