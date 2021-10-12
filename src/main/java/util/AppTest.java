@@ -64,5 +64,5 @@ public class AppTest extends TestCase {
 
 	}
 
-	public static String CLIENT_PHOTO_UPLOAD_PATH = "C:\\Users\\Adol-sys-410\\Downloads\\rsJPG2500kB1.jpg";
+	public static String CLIENT_PHOTO_UPLOAD_PATH = "./src/main/java/testData/clientLogo.jpg";
 }
