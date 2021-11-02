@@ -64,5 +64,6 @@ public class AppTest extends TestCase {
 
 	}
 
-	public static String CLIENT_PHOTO_UPLOAD_PATH = "./src/main/java/testData/clientLogo.jpg";
+	public static String CLIENT_PHOTO_UPLOAD_PATH = "E:\\qagithub\\hoursheets_crud\\Hoursheets_CRUD\\src\\testData\\clientLogo.jpg";
+	public static String ADD_INVOICE_PHOTO_UPLOAD_PATH = "E:\\qagithub\\hoursheets_crud\\Hoursheets_CRUD\\src\\testData\\invoiceLogo.png";
 }

@@ -1,5 +1,7 @@
-18:57:33.248 [main] INFO  resources.basePage - Driver is initialised
-18:57:37.194 [main] INFO  resources.basePage - Navigated to Login page
-11:45:30.096 [main] INFO  resources.basePage - Driver is initialised
-11:46:38.665 [main] INFO  resources.basePage - Driver is initialised
-11:46:44.212 [main] INFO  resources.basePage - Navigated to Login page
+19:12:31.453 [main] INFO  resources.basePage - Navigated to Login page
+11:05:27.732 [main] INFO  resources.basePage - Driver is initialised
+11:05:37.259 [main] INFO  resources.basePage - Navigated to Login page
+12:21:07.935 [main] INFO  resources.basePage - Driver is initialised
+12:21:16.196 [main] INFO  resources.basePage - Navigated to Login page
+12:24:31.160 [main] INFO  resources.basePage - Driver is initialised
+12:24:36.752 [main] INFO  resources.basePage - Navigated to Login page

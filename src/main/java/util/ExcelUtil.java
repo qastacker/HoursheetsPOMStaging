@@ -56,5 +56,29 @@ public class ExcelUtil {
 		DataFormatter formatter = new DataFormatter();
 		return formatter.formatCellValue(cell);
 	}
+	
+	public static int getExcelData(String sheetName) {
+
+		// Open the Excel file
+		FileInputStream file = null;
+
+		try {
+			file = new FileInputStream(TEST_DATA_SHEET_PATH);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			excelWBook = WorkbookFactory.create(file);
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		excelWSheet = excelWBook.getSheet(sheetName);		
+		int rowCount = excelWSheet.getLastRowNum() - excelWSheet.getFirstRowNum();
+		return rowCount;
+	}
 
 }

@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13139" started-at="2021-09-23T11:46:38 IST" finished-at="2021-09-23T11:46:51 IST">
+  <suite name="Default suite" duration-ms="45352" started-at="2021-11-02T12:24:31 IST" finished-at="2021-11-02T12:25:16 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13139" started-at="2021-09-23T11:46:38 IST" finished-at="2021-09-23T11:46:51 IST">
-      <class name="Clients.AddClientTest">
-        <test-method status="PASS" signature="bTest()[pri:0, instance:Clients.AddClientTest@791f145a]" name="bTest" is-config="true" duration-ms="5563" started-at="2021-09-23T11:46:38 IST" finished-at="2021-09-23T11:46:44 IST">
+    <test name="Default test" duration-ms="45352" started-at="2021-11-02T12:24:31 IST" finished-at="2021-11-02T12:25:16 IST">
+      <class name="Invoice.AddInvoiceTest">
+        <test-method status="PASS" signature="bTest()[pri:0, instance:Invoice.AddInvoiceTest@6340e5f0]" name="bTest" is-config="true" duration-ms="5613" started-at="2021-11-02T12:24:31 IST" finished-at="2021-11-02T12:24:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bTest -->
-        <test-method status="PASS" signature="verifyClientSideButton()[pri:0, instance:Clients.AddClientTest@791f145a]" name="verifyClientSideButton" duration-ms="2275" started-at="2021-09-23T11:46:44 IST" finished-at="2021-09-23T11:46:46 IST">
+        <test-method status="PASS" signature="verifyInvoiceSideButton()[pri:0, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyInvoiceSideButton" duration-ms="1608" started-at="2021-11-02T12:24:36 IST" finished-at="2021-11-02T12:24:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClientSideButton -->
-        <test-method status="PASS" signature="verifyClientAddButton()[pri:1, instance:Clients.AddClientTest@791f145a]" name="verifyClientAddButton" duration-ms="235" started-at="2021-09-23T11:46:46 IST" finished-at="2021-09-23T11:46:46 IST">
+        </test-method> <!-- verifyInvoiceSideButton -->
+        <test-method status="PASS" signature="verifyAddInvoiceButton()[pri:1, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyAddInvoiceButton" duration-ms="261" started-at="2021-11-02T12:24:38 IST" finished-at="2021-11-02T12:24:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClientAddButton -->
-        <test-method status="PASS" signature="clientFirstAndLastName()[pri:2, instance:Clients.AddClientTest@791f145a]" name="clientFirstAndLastName" duration-ms="394" started-at="2021-09-23T11:46:46 IST" finished-at="2021-09-23T11:46:47 IST">
+        </test-method> <!-- verifyAddInvoiceButton -->
+        <test-method status="PASS" signature="verifyCompanyNameAndLogo()[pri:2, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyCompanyNameAndLogo" duration-ms="3574" started-at="2021-11-02T12:24:38 IST" finished-at="2021-11-02T12:24:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientFirstAndLastName -->
-        <test-method status="PASS" signature="clientEmail()[pri:3, instance:Clients.AddClientTest@791f145a]" name="clientEmail" duration-ms="310" started-at="2021-09-23T11:46:47 IST" finished-at="2021-09-23T11:46:47 IST">
+        </test-method> <!-- verifyCompanyNameAndLogo -->
+        <test-method status="PASS" signature="verifyClient()[pri:3, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyClient" duration-ms="328" started-at="2021-11-02T12:24:42 IST" finished-at="2021-11-02T12:24:42 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientEmail -->
-        <test-method status="PASS" signature="clientAddress()[pri:4, instance:Clients.AddClientTest@791f145a]" name="clientAddress" duration-ms="447" started-at="2021-09-23T11:46:47 IST" finished-at="2021-09-23T11:46:47 IST">
+        </test-method> <!-- verifyClient -->
+        <test-method status="PASS" signature="verifyInvoiceNo()[pri:4, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyInvoiceNo" duration-ms="492" started-at="2021-11-02T12:24:42 IST" finished-at="2021-11-02T12:24:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientAddress -->
-        <test-method status="PASS" signature="clientPhNoAndFax()[pri:5, instance:Clients.AddClientTest@791f145a]" name="clientPhNoAndFax" duration-ms="266" started-at="2021-09-23T11:46:47 IST" finished-at="2021-09-23T11:46:48 IST">
+        </test-method> <!-- verifyInvoiceNo -->
+        <test-method status="PASS" signature="verifyDateAndDueDate()[pri:5, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyDateAndDueDate" duration-ms="1949" started-at="2021-11-02T12:24:43 IST" finished-at="2021-11-02T12:24:45 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientPhNoAndFax -->
-        <test-method status="PASS" signature="clientWebsite()[pri:6, instance:Clients.AddClientTest@791f145a]" name="clientWebsite" duration-ms="213" started-at="2021-09-23T11:46:48 IST" finished-at="2021-09-23T11:46:48 IST">
+        </test-method> <!-- verifyDateAndDueDate -->
+        <test-method status="PASS" signature="verifyAddItem()[pri:6, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyAddItem" duration-ms="26376" started-at="2021-11-02T12:24:45 IST" finished-at="2021-11-02T12:25:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientWebsite -->
-        <test-method status="PASS" signature="clientPhoto()[pri:7, instance:Clients.AddClientTest@791f145a]" name="clientPhoto" duration-ms="3139" started-at="2021-09-23T11:46:48 IST" finished-at="2021-09-23T11:46:51 IST">
+        </test-method> <!-- verifyAddItem -->
+        <test-method status="PASS" signature="verifyTaxAndDiscount()[pri:7, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyTaxAndDiscount" duration-ms="1333" started-at="2021-11-02T12:25:11 IST" finished-at="2021-11-02T12:25:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientPhoto -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Clients.AddClientTest@791f145a]" name="tearDown" is-config="true" duration-ms="226" started-at="2021-09-23T11:46:51 IST" finished-at="2021-09-23T11:46:51 IST">
+        </test-method> <!-- verifyTaxAndDiscount -->
+        <test-method status="PASS" signature="verifyInvoiceAndPrivateNote()[pri:8, instance:Invoice.AddInvoiceTest@6340e5f0]" name="verifyInvoiceAndPrivateNote" duration-ms="3403" started-at="2021-11-02T12:25:12 IST" finished-at="2021-11-02T12:25:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvoiceAndPrivateNote -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Invoice.AddInvoiceTest@6340e5f0]" name="tearDown" is-config="true" duration-ms="339" started-at="2021-11-02T12:25:16 IST" finished-at="2021-11-02T12:25:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Clients.AddClientTest -->
+      </class> <!-- Invoice.AddInvoiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
