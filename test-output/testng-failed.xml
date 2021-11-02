@@ -3,12 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Invoice.AddInvoiceTest">
+      <class name="Invoice.EditInvoiceTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="verifyInvoiceAndPrivateNote"/>
           <include name="bTest"/>
+          <include name="selectAndEditInvoice"/>
+          <include name="verifyAddItem"/>
+          <include name="verifyInvoiceNo"/>
+          <include name="verifyDateAndDueDate"/>
           <include name="verifyCompanyNameAndLogo"/>
+          <include name="verifyInvoiceSideButton"/>
+          <include name="verifyTaxAndDiscount"/>
+          <include name="verifyClient"/>
         </methods>
-      </class> <!-- Invoice.AddInvoiceTest -->
+      </class> <!-- Invoice.EditInvoiceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
