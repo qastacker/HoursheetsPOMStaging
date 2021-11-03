@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Adol-sys-410\AppData\Local\Temp\testng-eclipse-1051832740\testng-customsuite.xml</span>
+                    <span>C:\Users\Adol-sys-410\AppData\Local\Temp\testng-eclipse-1740492453\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="clientEmail">clientEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +116,37 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.DeleteClientTest" hash-for-method="selectYesOrNo">selectYesOrNo</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="clientAddress">clientAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.DeleteClientTest" hash-for-method="validateClient">validateClient</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="clientFirstAndLastName">clientFirstAndLastName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.DeleteClientTest" hash-for-method="verifyInvoiceSideButton">verifyInvoiceSideButton</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="clientPhNoAndFax">clientPhNoAndFax</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="clientPhoto">clientPhoto</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="clientWebsite">clientWebsite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="validateClient">validateClient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Clients.EditClientTest" hash-for-method="verifyClientSideButton">verifyClientSideButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,17 +161,117 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Clients.DeleteClientTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">Clients.EditClientTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectYesOrNo">
-                  </a> <!-- selectYesOrNo -->
-                  <span class="method-name">selectYesOrNo</span>
+                  <a name="clientEmail">
+                  </a> <!-- clientEmail -->
+                  <span class="method-name">clientEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=95.0.4638.54)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CP4RQU0&apos;, ip: &apos;172.27.112.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\ADOL-S~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3cc96f9a7c9b9b6d0a07ca2f684fb0b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)
+	at ClientsPages.EditClientPage.getEmail(EditClientPage.java:129)
+	at Clients.EditClientTest.clientEmail(EditClientTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Clients.EditClientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientAddress">
+                  </a> <!-- clientAddress -->
+                  <span class="method-name">clientAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientFirstAndLastName">
+                  </a> <!-- clientFirstAndLastName -->
+                  <span class="method-name">clientFirstAndLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientPhNoAndFax">
+                  </a> <!-- clientPhNoAndFax -->
+                  <span class="method-name">clientPhNoAndFax</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientPhoto">
+                  </a> <!-- clientPhoto -->
+                  <span class="method-name">clientPhoto</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientWebsite">
+                  </a> <!-- clientWebsite -->
+                  <span class="method-name">clientWebsite</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -149,9 +283,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyInvoiceSideButton">
-                  </a> <!-- verifyInvoiceSideButton -->
-                  <span class="method-name">verifyInvoiceSideButton</span>
+                  <a name="verifyClientSideButton">
+                  </a> <!-- verifyClientSideButton -->
+                  <span class="method-name">verifyClientSideButton</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +293,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Adol-sys-410\AppData\Local\Temp\testng-eclipse-1051832740\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Adol-sys-410\AppData\Local\Temp\testng-eclipse-1740492453\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,7 +302,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Clients.DeleteClientTest&quot;/&gt;
+      &lt;class name=&quot;Clients.EditClientTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -208,24 +342,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyInvoiceSideButton')
-data.setCell(0, 2, 'Clients.DeleteClientTest')
-data.setCell(0, 3, 1739);
+data.setCell(0, 1, 'clientPhoto')
+data.setCell(0, 2, 'Clients.EditClientTest')
+data.setCell(0, 3, 3057);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateClient')
-data.setCell(1, 2, 'Clients.DeleteClientTest')
-data.setCell(1, 3, 630);
+data.setCell(1, 1, 'verifyClientSideButton')
+data.setCell(1, 2, 'Clients.EditClientTest')
+data.setCell(1, 3, 1572);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectYesOrNo')
-data.setCell(2, 2, 'Clients.DeleteClientTest')
-data.setCell(2, 3, 250);
+data.setCell(2, 1, 'validateClient')
+data.setCell(2, 2, 'Clients.EditClientTest')
+data.setCell(2, 3, 630);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clientFirstAndLastName')
+data.setCell(3, 2, 'Clients.EditClientTest')
+data.setCell(3, 3, 593);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clientAddress')
+data.setCell(4, 2, 'Clients.EditClientTest')
+data.setCell(4, 3, 489);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'clientPhNoAndFax')
+data.setCell(5, 2, 'Clients.EditClientTest')
+data.setCell(5, 3, 445);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clientWebsite')
+data.setCell(6, 2, 'Clients.EditClientTest')
+data.setCell(6, 3, 274);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clientEmail')
+data.setCell(7, 2, 'Clients.EditClientTest')
+data.setCell(7, 3, 63);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -251,27 +405,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Clients.DeleteClientTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Clients.EditClientTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">bTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">verifyInvoiceSideButton</span>
-                <span class="method-start">6376 ms</span>
+                <span class="method-name">verifyClientSideButton</span>
+                <span class="method-start">6537 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateClient</span>
-                <span class="method-start">8125 ms</span>
+                <span class="method-start">8122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">selectYesOrNo</span>
-                <span class="method-start">8760 ms</span>
+                <span class="method-name">clientFirstAndLastName</span>
+                <span class="method-start">8754 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9021 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clientEmail</span>
+                <span class="method-start">9350 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientAddress</span>
+                <span class="method-start">9416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientPhNoAndFax</span>
+                <span class="method-start">9907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientWebsite</span>
+                <span class="method-start">10354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientPhoto</span>
+                <span class="method-start">10629 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
