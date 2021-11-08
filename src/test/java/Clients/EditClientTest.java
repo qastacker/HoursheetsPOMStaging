@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -89,5 +90,11 @@ public class EditClientTest extends basePage {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		ecp.addClientPhoto();
 		ecp.clickClientSubmitBtn();
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		driver.close();
+		// driver.quit();
 	}
 }
