@@ -22,6 +22,8 @@ public class basePage {
 
 	public static WebDriver driver;
 	public static Properties prop;  
+	
+	public static ThreadLocal<WebDriver> tldriver = new ThreadLocal<WebDriver>();
 
 	public WebDriver initializeDriver(Properties prop) {
 
@@ -54,6 +56,10 @@ public class basePage {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 
+	}
+	
+	public static synchronized WebDriver getDriver(){
+		return tldriver.get();
 	}
 
 	/**
@@ -91,12 +97,15 @@ public class basePage {
 		return destinationFile;
 	}
 	
-//	public String getScreenshot(String result,WebDriver driver) throws IOException {
-//		
-//		TakesScreenshot ts=(TakesScreenshot) driver;
-//		File src = ts.getScreenshotAs(OutputType.FILE);
-//		String destination = System.getProperty("user.dir")+"\\TestScreenshot\\"+result+".png";
-//		FileUtils.copyFile(src, new File(destination));
-//		return destination;
-//	}
+	public String getScreenshot() {
+		File src = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir") + "/screenshots/" + System.currentTimeMillis() + ".png";
+		File destination = new File(path);
+		try {
+			FileUtils.copyFile(src, destination);
+		} catch (IOException e) {
+			System.out.println("Capture Failed " + e.getMessage());
+		}
+		return path;
+	}
 }

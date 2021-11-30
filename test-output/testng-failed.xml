@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Clients.EditClientTest">
+      <class name="Clients.DeleteClientTest">
         <methods>
           <include name="bTest"/>
-          <include name="clientEmail"/>
+          <include name="selectYesOrNo"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Clients.EditClientTest -->
+      </class> <!-- Clients.DeleteClientTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
